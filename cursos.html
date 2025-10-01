@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Archivo de inscripción a cursos con formulario y navegación -->
+</head>
+<body>
+    <!-- Encabezado y menú de navegación -->
+    <header>
+        <h1>CURSOS</h1>
+        <nav>
+            <ul>
+                <li><a href="lenguajes.html">Lenaguajes</a></li>
+                <li><a href="index.html">Pagina Principal</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="validacion.html">Validacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <h1>INSCRIPCION A UN CURSO</h1>
+        <!-- Formulario de inscripción -->
+        <form action="#" method="post">
+            <!-- Campo: Nombre -->
+            <label>
+                Nombre:
+                <input type="text" name="nombre" placeholder="Escriba su nombre">
+            </label>
+            <br><br>
+
+            <!-- Campo: Apellidos -->
+            <label>
+                Apellidos:
+                <input type="text" name="apellido" placeholder="Escriba su apellido">
+            </label>
+            <br><br>
+
+            <!-- Campo: DNI -->
+            <label>
+                DNI:
+                <input type="text" name="dni" placeholder="Escriba su DNI">
+            </label>
+            <br><br>
+
+            <!-- Campo: Correo Electrónico -->
+            <label>
+                Correo Electronico:
+                <input type ="email" name="correo" placeholder="Escriba su correo">
+            </label>
+            <br><br>
+
+            <!-- Selección de curso -->
+            <label>
+                CURSO:
+                <select name="curso" requerid>
+                    <option>Introduccion al Desarrollo Web</option>
+                    <option>Calculo en una Variable</option>
+                    <option>Estructuras Discretas</option>
+                </select>
+            </label>
+            <br><br>
+
+            <!-- Modalidad: solo una opción -->
+            <label>
+                Modalidad:
+                <input type="radio" name="modalidad" requerid>Presencial
+                <input type="radio" name="modalidad" requerid>Virtual
+            </label>
+            <br><br>
+
+            <!-- Horarios disponibles: pueden ser varios -->
+            <label>
+                Horarios Disponibles:
+                <input type="checkbox" id="horarios" name="horarios">Mañana
+                <input type="checkbox" id="horarios" name="horarios">Tarde
+                <input type="checkbox" id="horarios" name="horarios">Noche
+            </label>
+            <br><br>
+
+            <!-- Comentarios adicionales -->
+            <label>
+                Comentarios adicionales:
+                <textarea name="comentarios" rows="3" cols="40" placeholder="Escriba aquí sus comentarios"></textarea>
+            </label>
+            <br><br>
+
+            <!-- Botones Enviar y Restablecer -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </form>
+    </main>
+    
+</body>
+</html>
